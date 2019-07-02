@@ -22,4 +22,13 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation project(":library")
+
+    implementation 'com.umeng.umsdk:common:1.5.4'
+    implementation 'com.umeng.umsdk:utdid:1.1.5.3'
+    implementation 'com.umeng.umsdk:push:5.0.2'
+
+    //小米Push通道
+    implementation 'com.umeng.umsdk:xiaomi-push:3.6.9'
+    implementation 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9'
 }

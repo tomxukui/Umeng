@@ -23,4 +23,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.dependencies["support-annotations"]
+
+    compileOnly 'com.umeng.umsdk:common:1.5.4'
+    compileOnly 'com.umeng.umsdk:utdid:1.1.5.3'
+    compileOnly 'com.umeng.umsdk:push:5.0.2'
+
+    //小米Push通道
+    compileOnly 'com.umeng.umsdk:xiaomi-push:3.6.9'
+    compileOnly 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9'
 }
