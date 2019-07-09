@@ -9,6 +9,7 @@ import com.umeng.message.PushAgent;
 import com.xukui.library.umeng.builder.UmengData;
 import com.xukui.library.umeng.builder.UmengPushData;
 
+import org.android.agoo.huawei.HuaWeiRegister;
 import org.android.agoo.xiaomi.MiPushRegistar;
 
 public final class UmengClient {
@@ -80,6 +81,11 @@ public final class UmengClient {
             //配置小米推送
             if (umengPushData.getMiPushData() != null) {
                 MiPushRegistar.register(mContext, umengPushData.getMiPushData().getAppId(), umengPushData.getMiPushData().getAppKey());
+            }
+
+            //配置华为推送
+            if (umengPushData.isHuaWeiPushEnabled()) {
+                HuaWeiRegister.register(mContext);
             }
         }
     }

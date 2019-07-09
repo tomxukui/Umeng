@@ -32,4 +32,9 @@ dependencies {
     //小米Push通道
     compileOnly 'com.umeng.umsdk:xiaomi-push:3.6.9'
     compileOnly 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9'
+
+    //华为Push通道
+    compileOnly 'com.umeng.umsdk:huawei-basetb:2.6.3.305'
+    compileOnly 'com.umeng.umsdk:huawei-pushtb:2.6.3.305'
+    compileOnly 'com.umeng.umsdk:huawei-umengaccs:1.2.1'
 }

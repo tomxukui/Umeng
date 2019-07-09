@@ -13,6 +13,7 @@ public class UmengPushData {
     private UmengMessageHandler umengMessageHandler;
     private UmengNotificationClickHandler umengNotificationClickHandler;
     private MiPushData miPushData;
+    private boolean huaWeiPushEnabled;
     private OnPushRegisterListener onPushRegisterListener;
 
     UmengPushData(Builder builder) {
@@ -21,6 +22,7 @@ public class UmengPushData {
         this.umengMessageHandler = builder.umengMessageHandler;
         this.umengNotificationClickHandler = builder.umengNotificationClickHandler;
         this.miPushData = builder.miPushData;
+        this.huaWeiPushEnabled = builder.huaWeiPushEnabled;
         this.onPushRegisterListener = builder.onPushRegisterListener;
     }
 
@@ -44,6 +46,10 @@ public class UmengPushData {
         return miPushData;
     }
 
+    public boolean isHuaWeiPushEnabled() {
+        return huaWeiPushEnabled;
+    }
+
     public OnPushRegisterListener getOnPushRegisterListener() {
         return onPushRegisterListener;
     }
@@ -55,6 +61,7 @@ public class UmengPushData {
         private UmengMessageHandler umengMessageHandler;
         private UmengNotificationClickHandler umengNotificationClickHandler;
         private MiPushData miPushData;
+        private boolean huaWeiPushEnabled;
         private OnPushRegisterListener onPushRegisterListener;
 
         public Builder(String messageSecret) {
@@ -82,6 +89,11 @@ public class UmengPushData {
 
         public Builder setMiPushData(MiPushData miPushData) {
             this.miPushData = miPushData;
+            return this;
+        }
+
+        public Builder setHuaWeiPushEnabled(boolean enabled) {
+            this.huaWeiPushEnabled = enabled;
             return this;
         }
 
