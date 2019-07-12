@@ -1,13 +1,13 @@
-package com.xukui.library.umeng.builder;
+package com.xukui.library.umeng.params;
 
 import android.text.TextUtils;
 
-public class MiPushData {
+public class MiPushParam {
 
     private String appId;
     private String appKey;
 
-    public MiPushData(String appId, String appKey) {
+    public MiPushParam(String appId, String appKey) {
         if (TextUtils.isEmpty(appId)) {
             throw new NullPointerException("小米推送的appid不能为空");
         }

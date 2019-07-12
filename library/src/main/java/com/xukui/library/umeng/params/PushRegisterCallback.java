@@ -1,6 +1,6 @@
-package com.xukui.library.umeng.callback;
+package com.xukui.library.umeng.params;
 
-public interface OnPushRegisterListener {
+public interface PushRegisterCallback {
 
     void onStart();
 
