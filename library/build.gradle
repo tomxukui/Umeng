@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
-        versionCode 4
-        versionName "1.0.3"
+        versionCode 5
+        versionName "1.0.4"
     }
 
     buildTypes {
@@ -25,13 +25,13 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     compileOnly rootProject.ext.dependencies["support-annotations"]
 
-    compileOnly 'com.umeng.umsdk:common:1.5.4'
+    compileOnly 'com.umeng.umsdk:common:2.1.0'
     compileOnly 'com.umeng.umsdk:utdid:1.1.5.3'
-    compileOnly 'com.umeng.umsdk:push:5.0.2'
+    compileOnly 'com.umeng.umsdk:push:6.0.1'
 
     //小米Push通道
-    compileOnly 'com.umeng.umsdk:xiaomi-push:3.6.9'
-    compileOnly 'com.umeng.umsdk:xiaomi-umengaccs:1.0.9'
+    compileOnly 'com.umeng.umsdk:xiaomi-push:3.6.17'
+    compileOnly 'com.umeng.umsdk:xiaomi-umengaccs:1.1.0'
 
     //华为Push通道
     compileOnly 'com.umeng.umsdk:huawei-basetb:2.6.3.305'
